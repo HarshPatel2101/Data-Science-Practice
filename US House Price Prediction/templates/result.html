@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h2>Prediction Result</h2>
+    
+    <!-- Assuming prediction is a variable accessible in JavaScript -->
+    <p id="logPrediction">The predicted sale price in Log: {{ prediction }}</p>
+
+    <script>
+        // Access the prediction value from HTML and convert it to normal form
+        var logPredictionElement = document.getElementById('logPrediction');
+        var logPredictionValue = parseFloat(logPredictionElement.innerHTML.split(": ")[1]);
+        var normalPrediction = Math.exp(logPredictionValue);
+
+        // Update the HTML with the converted value
+        logPredictionElement.innerHTML = "The predicted sale price in Log: " + logPredictionValue;
+        document.body.innerHTML += "<p>The predicted sale price: $" + normalPrediction.toFixed(2) + "</p>";
+    </script>
+
+</body>
+</html>

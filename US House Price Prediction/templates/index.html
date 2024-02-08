@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale Price Prediction</title>
+</head>
+<body>
+    <h1>Sale Price Prediction</h1>
+    <form action="/predict" method="post">
+        <!-- Add input fields based on your features -->
+        <label for="MSSubClass">MSSubClass:</label>
+        <input type="int64" name="MSSubClass" required><br>
+
+        <label for="LotFrontage">LotFrontage:</label>
+        <input type="float64" name="LotFrontage" required><br>
+
+        <label for="LotArea">LotArea:</label>
+        <input type="int64" name="LotArea" required><br>
+
+        <label for="OverallQual">OverallQual:</label>
+        <input type="int64" name="OverallQual" required><br>
+
+        <label for="OverallCond">OverallCond:</label>
+        <input type="int64" name="OverallCond" required><br>
+
+        <label for="YearBuilt">YearBuilt:</label>
+        <input type="int64" name="YearBuilt" required><br>
+
+        <label for="YearRemodAdd">YearRemodAdd:</label>
+        <input type="int64" name="YearRemodAdd" required><br>
+
+        <label for="MasVnrArea">MasVnrArea:</label>
+        <input type="float64" name="MasVnrArea" required><br>
+
+        <label for="BsmtFinSF1">BsmtFinSF1:</label>
+        <input type="int64" name="BsmtFinSF1" required><br>
+
+        <label for="BsmtFinSF2">BsmtFinSF2:</label>
+        <input type="int64" name="BsmtFinSF2" required><br>
+
+        <label for="BsmtUnfSF">BsmtUnfSF:</label>
+        <input type="int64" name="BsmtUnfSF" required><br>
+
+        <label for="TotalBsmtSF">TotalBsmtSF:</label>
+        <input type="int64" name="TotalBsmtSF" required><br>
+
+        <label for="1stFlrSF">1stFlrSF:</label>
+        <input type="int64" name="1stFlrSF" required><br>
+
+        <label for="2ndFlrSF">2ndFlrSF:</label>
+        <input type="int64" name="2ndFlrSF" required><br>
+
+        <label for="LowQualFinSF">LowQualFinSF:</label>
+        <input type="int64" name="LowQualFinSF" required><br>
+
+        <label for="GrLivArea">GrLivArea:</label>
+        <input type="int64" name="GrLivArea" required><br>
+
+        <label for="BsmtFullBath">BsmtFullBath:</label>
+        <input type="int64" name="BsmtFullBath" required><br>
+
+        <label for="BsmtHalfBath">BsmtHalfBath:</label>
+        <input type="int64" name="BsmtHalfBath" required><br>
+
+        <label for="FullBath">FullBath:</label>
+        <input type="int64" name="FullBath" required><br>
+
+        <label for="HalfBath">HalfBath:</label>
+        <input type="int64" name="HalfBath" required><br>
+
+        <label for="BedroomAbvGr">BedroomAbvGr:</label>
+        <input type="int64" name="BedroomAbvGr" required><br>
+
+        <label for="KitchenAbvGr">KitchenAbvGr:</label>
+        <input type="int64" name="KitchenAbvGr" required><br>
+
+        <label for="TotRmsAbvGrd">TotRmsAbvGrd:</label>
+        <input type="int64" name="TotRmsAbvGrd" required><br>
+
+        <label for="Fireplaces">Fireplaces:</label>
+        <input type="int64" name="Fireplaces" required><br>
+
+        <label for="GarageYrBlt">GarageYrBlt:</label>
+        <input type="float64" name="GarageYrBlt" required><br>
+
+        <label for="GarageCars">GarageCars:</label>
+        <input type="int64" name="GarageCars" required><br>
+
+        <label for="GarageArea">GarageArea:</label>
+        <input type="int64" name="GarageArea" required><br>
+
+        <label for="WoodDeckSF">WoodDeckSF:</label>
+        <input type="int64" name="WoodDeckSF" required><br>
+
+        <label for="OpenPorchSF">OpenPorchSF:</label>
+        <input type="int64" name="OpenPorchSF" required><br>
+
+        <label for="EnclosedPorch">EnclosedPorch:</label>
+        <input type="int64" name="EnclosedPorch" required><br>
+
+        <label for="3SsnPorch">3SsnPorch:</label>
+        <input type="int64" name="3SsnPorch" required><br>
+
+        <label for="ScreenPorch">ScreenPorch:</label>
+        <input type="int64" name="ScreenPorch" required><br>
+
+        <label for="PoolArea">PoolArea:</label>
+        <input type="int64" name="PoolArea" required><br>
+
+        <label for="MiscVal">MiscVal:</label>
+        <input type="int64" name="MiscVal" required><br>
+
+        <label for="MoSold">MoSold:</label>
+        <input type="text" name="MoSold" required><br>
+
+        <label for="YrSold">YrSold:</label>
+        <input type="int64" name="YrSold" required><br>
+
+        <input type="submit" value="Predict">
+
+    </form>
+</body>
+</html>

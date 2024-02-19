@@ -1,0 +1,12 @@
+
+#Wine_Header{
+    text-align: center;
+    color:rgba(243, 9, 138, 0.781);
+}
+#fixed_acidity[type=number]{
+        width: 10%;
+        padding:10px;
+        margin: 8px;
+        box-sizing: border-box;
+        box-align: right;
+}
